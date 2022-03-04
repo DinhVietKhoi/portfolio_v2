@@ -124,3 +124,28 @@ body{
     }
     
 }
+.landing{
+    &__text{
+        position: absolute;
+        top:40%;
+        left:20%;
+        color:#fff;
+        & b{
+            transform: translateY(10px);
+            opacity: 0;
+            visibility: hidden;
+            animation: loadTextLD 0.3s 5s forwards;
+        }
+    }
+}
+@keyframes loadTextLD {
+    0%{
+        color:#fff
+    }
+    100%{
+        color:red;
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
