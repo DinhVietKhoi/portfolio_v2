@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 8306px;
+}
+.cursor{
+    position: fixed;
+    z-index: 99;
+    top:0;
+    left:0;
+    display: none;
+    mix-blend-mode: difference;
+}
+.mouse{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .07s linear;
+    &:nth-child(1){
+        transform: scale(9.5);
+    }
+}
+.load{
+    position: fixed;
+    width: calc(100vw - 3rem);
+    height: 30px;
+    top:50%;
+    left:1rem;
+    background-color: black;
+    z-index:30;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s;
+    &__list{
+        // width: 40%;
+        display: flex;
+        flex-direction: row;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        & li{
+            margin: 0 5px;
+            & a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                & i{
+                    font-size: 30px;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    & img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.overlay{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        left:0;
+        // background-color: transparent;
+        background-color: black;
+        z-index:21;
+        transition: all .7s;
+        &__loading{
+            font-size: 30px;
+            position: absolute;
+            color:#fff;
+            top: calc(50% - 2px);
+            left:3.5rem;
+            transition: all .5s;
+            visibility: visible;
+            opacity: 1;
+        }
+}
+
+.container{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    & section{
+        border-radius: 0 50px 50px 0;
+        position: absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 112rem;
+        transition: all .25s linear ;
+        box-shadow: 0 0 10px 5px #3e3737;
+        &:nth-child(1){
+            background-color: black;
+            z-index:20;
+        }&:nth-child(2){
+            z-index:19;
+            background-color: red;
+            padding-left: 37.5rem;
+        }&:nth-child(3){
+            z-index:18;
+            background-color: green;
+            padding-left: 7.5rem;
+        }&:nth-child(4){
+            z-index:17;
+            background-color: blue;
+            padding-left: 25rem;
+            width: 125rem;
+        }
+        &:nth-child(5){
+            z-index:16;
+            background-color: orange;
+        }
+    }
+    
+}
