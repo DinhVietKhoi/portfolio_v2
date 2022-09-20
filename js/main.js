@@ -8,8 +8,10 @@ let overlayLoading = document.querySelector('.overlay__loading')
 let loadList = document.querySelector('.load__list')
 let cursor = document.querySelector('.cursor')
 let mouse = document.querySelectorAll('.mouse')
+let check;
+
 const mouseArr = [...mouse]
-console.log(mouseArr);
+
 setTimeout(() => {
     overlayLoading.style.opacity = "0";
     overlayLoading.style.top = "40%";
@@ -22,18 +24,43 @@ setTimeout(() => {
     overlay.style.opacity="0"
     overlay.style.visibility = "hidden"
 }, 3500);
+
+//get event pause mousemove
+let timeout;
+document.onmousemove = function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function () {
+        cursor.classList.add("pause")
+    }, 500);
+}
+
 //mouser effects
-window.addEventListener('mousemove',(e)=>{
+window.addEventListener('mousemove', (e) => {
+    cursor.classList.remove("pause")
+    var checkX = e.clientX;
+    var checkY = e.clientY;
     var x = e.clientX - 15
     var y = e.clientY - 15
     mouseArr.map((e,index)=>{
         let data = e.getAttribute("data-scale")
         let dataSpeed = e.getAttribute("data-speed")
-        console.log(data)
         e.style.transform = `translate(${x}px,${y}px) scale(${data},${data})`
-        e.style.transition = `transform ${dataSpeed}s ease`
+        e.style.transition = `transform ${dataSpeed*2}s ease`
+        e.style.top = `0`
+        e.style.left = `0`
+        e.style.right = `0`
     })
+    clearInterval(check)
+    check = setInterval(() => {
+        mouseArr.map((e,index)=>{
+            if(index>6){
+                let data1 = e.getAttribute("")
+            }
+        })
+    }, 100);
 })
+
+
 
 
 
@@ -68,7 +95,6 @@ window.addEventListener('scroll',()=>{
         about.style.transform= `translateX(-${setX-3600}px)`;
         project.style.transform= `translateX(-${setX-5400}px)`;
     }
-    console.log(setX)
     // project.style.transform= `translateX(-${setX}px)`;
     // follow.style.transform= `translateX(-${setX}px)`;
     // container.style.transform= `translateX(-${setX}px)`;
