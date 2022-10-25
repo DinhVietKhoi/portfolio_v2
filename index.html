@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Raleway:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
     <title>Portfolio version 2</title>
 </head>
 <body>
@@ -31,45 +35,279 @@
         <div class="mouse" data-speed="0.095" data-scale="0.15"></div>
         <div class="mouse" data-speed="0.1" data-scale="0.1"></div>
     </div>
-    <div class="load">
-        <img src="https://silviasguotti.design/logo-bianco.svg" alt="">
-        <ul class="load__list">
-            <li>
-                <a href="https://www.facebook.com/vietkhoi1999/" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/Dinhvietkhoi1" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/DinhVietKhoi" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/khoi-dinh-155553224/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+
     <div class="overlay">   
         <div class="overlay__loading">
             LOADING
         </div>
     </div>
     
-    <div class="container">
+    <div class="container container__widthR">
         <section class="landing">
-            <span class="landing__text">hế lô phen <b>Moaz Moazz</b></span>
+            <div class="landing__container">
+                <div class="landing__left">
+                    <div class="landing__info">
+                        <div class="landing__name">
+                            <span>Đinh Viết Khôi</span>
+                            <span>Đinh Viết Khôi</span>
+                        </div>
+                        <span class="landing__major">Front-End Developer</span>
+                    </div>
+                    <div class="landing__skill">
+                        <div class="landing__skillInfo">
+                            <div class="landing__skillSchool">
+                                <span>ĐH Sư Phạm TP.HCM</span>
+                                <span>Công Nghệ Thông Tin - Công Nghệ Phần Mềm</span>
+                            </div>
+                        </div>
+                        <div class="landing__skillMain">
+                            <span>Kỹ năng :</span>
+                            <div class="landing__skillGroup">
+                                <div class="landing__skillList">
+                                    <span 
+                                    class="landing__skillItem">Html, Css</span>
+                                    <span
+                                    class="landing__skillItem">Javascript</span>
+                                    <span
+                                    class="landing__skillItem">Sass</span>
+                                    <span
+                                    class="landing__skillItem">Jquery</span>
+                                    <span 
+                                    class="landing__skillItem">ReactJs</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="landing__right landing__widthR">
+                    <div class="landing__empty">
+                        <img src="/images/avata.png" alt="avata">
+                    </div>
+                    <div class="landing__nextPage">
+                        <div class="landing__textNext">
+                            <span>Nguồn cảm hứng</span>
+                            <span class="landing__nextBtn">Nhấn để đọc→</span>
+                        </div>
+                        <img src="images/scrollIcon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="landing__empty"></div>
         </section>
-        <section class="manifesto">MANIFESTO</section>
-        <section class="about">ABOUT</section>
-        <section class="project">PROJECT</section>
-        <section class="contact">CONTACT</section>
+        <section class="inspire">
+            <div class="inspire__container">
+                <div class="inspire__list">
+                    <div class="inspire__item">
+                        <span class="inspire__number">1</span>
+                        <div class="inspire__content">
+                            <span>Lần đầu tiên học môn thiết kế web (html,css).</span>
+                            <span>--2020-2021--</span>
+                        </div>
+                    </div>
+                    <div class="inspire__item">
+                        <span class="inspire__number">2</span>
+                        <div class="inspire__content">
+                            <span>Cảm thấy thích, sau khi hoàn thành môn học thì tự học và tự làm những trang web yêu thích.</span>
+                            <span>--2020-2021--</span>
+                        </div>
+                    </div>
+                    <div class="inspire__item">
+                        <span class="inspire__number">3</span>
+                        <div class="inspire__content">
+                            <span>Bắt đầu tạo acc github để lưu code, tự học reactjs để chuẩn bị xin thực tập.</span>
+                            <span>--2021-2022--</span>
+                        </div>
+                    </div>
+                    <div class="inspire__item">
+                        <span class="inspire__number">4</span>
+                        <div class="inspire__content">
+                            <span>Xin thực tập tại 1 công ty học Reactjs,Typescript và hoàn thành thực tập sau đó chuẩn bị tốt nghiệp ra trường.</span>
+                            <span>--2021-2022--</span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="inspire__title">QUÁ TRÌNH PHÁT TRIỂN KỸ NĂNG</h1>
+            </div>
+        </section>
+        <section class="section__group">
+            <div class="section__group__container">
+                <h1 class="section__group__title ">
+                    <strong class="section__group__title__strong1">Future Goal</strong> <span>and</span> <strong class="section__group__title__strong2">My Projects</strong>
+                </h1>
+                <div class="target">
+                    <div class="target__card">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="/images/doraemon2.jpg" alt="">
+                                <img src="/images/doraemon.jpg" alt="">
+                            </div>
+                            <div class="card__detail">
+                                <span class="card__detail__content">
+                                    ❝ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate consectetur eligendi officia ab totam deleniti minus asperiores vel debitis obcaecati! Quisquam necessitatibus ad labore rem expedita blanditiis, esse nam. Tenetu..... ❞
+                                </span>
+                                <ul class="load__list">
+                                    <li>
+                                        <a href="https://www.facebook.com/vietkhoi1999/" target="_blank">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Dinhvietkhoi1" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/DinhVietKhoi" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/khoi-dinh-155553224/" target="_blank">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shapes">
+                        <div class="shape" data-speed="10" direction="X" direction1="-">
+                            <img src="/images/shape1.png" alt="">
+                        </div>
+                        <div class="shape" data-speed="9" direction="Y" direction1="-">
+                            <img src="/images/shape2.png" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="10" direction="X" direction1="+">
+                            <img src="/images/shape7.svg" alt="">
+                        </div>
+                        <div class="shape" data-speed="5" direction="Y" direction1="-">
+                            <img src="/images/shape3.png" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="10" direction="X" direction1="+">
+                            <img src="/images/shape6.svg" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="2" direction="Y" direction1="+">
+                            <img src="/images/shape4.png" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="10" direction="X" direction1="-">
+                            <img src="/images/shape5.svg" alt="">
+                        </div>
+                        <div class="shape" data-speed="5" direction="Y" direction1="-">
+                            <img src="/images/shape8.svg" alt="">
+                        </div>
+                        <div class="shape" data-speed="10" direction="X" direction1="-">
+                            <img src="/images/shape1.png" alt="">
+                        </div>
+                        <div class="shape" data-speed="9" direction="Y" direction1="-">
+                            <img src="/images/shape2.png" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="7" direction="X" direction1="+">
+                            <img src="/images/shape7.svg" alt="">
+                        </div>
+                        <div class="shape" data-speed="5" direction="Y" direction1="-">
+                            <img src="/images/shape3.png" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="3" direction="X" direction1="+">
+                            <img src="/images/shape6.svg" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="1" direction="Y" direction1="+">
+                            <img src="/images/shape4.png" alt="">
+
+                        </div>
+                        <div class="shape" data-speed="4" direction="X" direction1="-">
+                            <img src="/images/shape5.svg" alt="">
+                        </div>
+                        <div class="shape" data-speed="3" direction="Y" direction1="-">
+                            <img src="/images/shape8.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__container">
+                        <ul class="project__list">
+                            <li class="project__item">
+                                <span>Web nghe nhạc Lofi</span>
+                                <img src="/images/lofi.png" alt="">
+                                <p> <strong>Description:</strong> Trang web nghe nhạc đăng ký tài khoản để có thể nhắn tin với những người đang nghe.<i>Reactjs,Firebase,Responsive,Sass.</i></p>
+                                <div class="project__overlay">
+                                    <a href="https://dinhvietkhoi.github.io/lofi/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="project__item">
+                                <span>Web bán quần áo</span>
+                                <img src="/images/eshop.png" alt="">
+                                <p> <strong>Description:</strong> Trang web bán quần áo chỉ clone lại trang thôi không có chức năng.<i>Html,Css,Javascript,Sass,Responsive.</i></p>
+                                <div class="project__overlay">
+                                    <a href="https://dinhvietkhoi.github.io/Eshop/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="project__item">
+                                <span>Web bán quần áo</span>
+                                <img src="/images/hope.png" alt="">
+                                <p> <strong>Description:</strong> Trang web bán quần áo gọi api của fakestoreapi, có thể thêm sản phẩm vào giỏ hàng. <i>Reactjs,Sass,Responsive.</i></p>
+                                <div class="project__overlay">
+                                    <a href="https://dinhvietkhoi.github.io/Hope-Shop/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="project__item">
+                                <span>Web clone Facebook</span>
+                                <img src="/images/faceclone.png" alt="">
+                                <p> <strong>Description:</strong> Trang web clone lại từ facebook chỉ có đăng ký đăng nhập và đăng hình ảnh bằng đường link. <i>Reactjs,firebase,Sass.</i></p>
+                                <div class="project__overlay">
+                                    <a href="https://dinhvietkhoi.github.io/faceclone/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="project__item">
+                                <span>Web quản lý vé</span>
+                                <img src="/images/cms.png" alt="">
+                                <p> <strong>Description:</strong> Trang web quản lý vé code từ file figma. Dữ liệu từ firebase từ tháng 3-5/2022 vui lòng chọn đúng ngày để show chart <i>Reactjs,Sass. </i> </p>
+                                <div class="project__overlay">
+                                    <a href="https://dinhvietkhoi.github.io/ticketCMS/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="project__item">
+                                <span>Web portfolio</span>
+                                <img src="/images/portfolio.png" alt="">
+                                <p> <strong>Description:</strong> Trang web được clone lại từ trang web khác.<i>Html,Css,Javascript,Responsive,Sass.</i></p>
+                                <div class="project__overlay">
+                                    <a href="https://dinhvietkhoi.github.io/portfolio/" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h1>KHÔNG NGỪNG <br><strong>PHÁT TRIỂN</strong><br>  BẢN THÂN</h1>
+            <a class="contact__cv" href="./images/DinhVietKhoiCV.pdf" download>
+                <div class="contact__cv_0"></div>
+                <div class="contact__cv_1">Tải</div>
+                <div class="contact__cv_2">CV</div>
+                <div class="contact__cv_3">NGAY</div>
+            </a>
+            <h2 class="contact__back">Về đầu trang</h2>
+        </section>
     </div>
     
     <script src="js/main.js"></script>
